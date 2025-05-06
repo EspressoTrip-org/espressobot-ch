@@ -1,5 +1,11 @@
 # types
 
+## 3.0.0
+
+### Major Changes
+
+- 11e4852: versions
+
 ## 2.0.0
 
 ### Major Changes
