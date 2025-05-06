@@ -1,0 +1,5 @@
+---
+'client': major
+---
+
+version bump
