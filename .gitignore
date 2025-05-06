@@ -1,0 +1,15 @@
+.idea
+.vscode
+.DS_Store
+.micro
+
+node_modules
+pulumi
+dist
+
+.env
+**/*.tsbuildinfo
+
+yarn-error.log
+npm-error.log
+.pnpm-debug.log

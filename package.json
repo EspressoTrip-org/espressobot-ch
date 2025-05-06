@@ -1,0 +1,21 @@
+{
+  "author": "JourneyApps Platform",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "check-updates": "ncu -u --deep",
+    "build": "pnpm run -r build",
+    "build:packages": "pnpm run -r --filter !{./service} build",
+    "build:service": "pnpm run -r --filter {./service}... build",
+    "clean": "pnpm run -r --parallel pnpm clean",
+    "repl": "cd service && npm run repl",
+    "watch": "pnpm build && cd service && pnpm watch"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.3",
+    "@types/node": "^22.1.0",
+    "npm-check-updates": "^17.0.3",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  }
+}

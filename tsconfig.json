@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./types"
+    },
+    {
+      "path": "./client"
+    },
+    {
+      "path": "./service"
+    }
+  ]
+}

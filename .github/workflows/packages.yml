@@ -1,0 +1,33 @@
+name: Publish Packages
+
+on:
+  push:
+    branches:
+    - '**'
+    tags-ignore:
+    - '**'
+
+jobs:
+  build-and-publish:
+    name: Build and Publish
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v3
+
+    - name: Setup NodeJS
+      uses: actions/setup-node@v4
+      with:
+        node-version: 22.14
+
+    - name: Setup PNPM
+      uses: pnpm/action-setup@v4
+
+    - name: Install Dependencies
+      run: pnpm install
+
+    - name: Create Release Pull Request
+      id: changesets
+      uses: changesets/action@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

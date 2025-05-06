@@ -1,0 +1,19 @@
+{
+  "name": "types",
+  "repository": "https://github.com/EspressoTrip-org/espressobot-ch",
+  "version": "0.0.1",
+  "main": "dist/index",
+  "types": "dist/index",
+  "license": "UNLICENCED",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "clean": "rm -rf ./dist && tsc -b --clean",
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "bson": "^6.8.0",
+    "ts-codec": "^1.2.2"
+  }
+}

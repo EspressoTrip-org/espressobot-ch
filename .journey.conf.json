@@ -1,0 +1,63 @@
+{
+  "project": "test",
+  "transformers": ["micro-service"],
+  "bot": {
+    "checks": {
+      "version": true
+    }
+  },
+  "environments": [
+    {
+      "name": "staging",
+      "extends": ["default"],
+      "domain": "PROJECT_NAME.staging.journeyapps.com",
+      "cluster": {
+        "stack": "journeyapps-platform/shared-services/staging"
+      },
+      "variables": {
+        "standard": {
+          "ACCOUNTS_ENDPOINT": "https://accounts.staging.journeyapps.com",
+          "CARDINAL_ENDPOINT": "https://cardinal.staging.journeyapps.com"
+        }
+      },
+      "replicas": 1,
+      "resources": {
+        "requests": {
+          "memory": "128Mi",
+          "cpu": "100m"
+        },
+        "limits": {
+          "memory": "128Mi"
+        }
+      }
+    },
+    {
+      "name": "production",
+      "extends": ["default"],
+      "domain": "PROJECT_NAME.journeyapps.com",
+      "resources": {
+        "requests": {
+          "memory": "128Mi",
+          "cpu": "100m"
+        },
+        "limits": {
+          "memory": "128Mi"
+        }
+      },
+      "cluster": {
+        "stack": "journeyapps-platform/shared-services/production"
+      },
+      "variables": {
+        "standard": {
+          "ACCOUNTS_ENDPOINT": "https://accounts.journeyapps.com",
+          "CARDINAL_ENDPOINT": "https://cardinal.journeyapps.com"
+        }
+      }
+    }
+  ],
+  "ci": {
+    "type": "github",
+    "organization": "journeyapps-platform",
+    "project": "PROJECT_NAME"
+  }
+}
