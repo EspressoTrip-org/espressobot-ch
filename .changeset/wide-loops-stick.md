@@ -1,5 +1,0 @@
----
-'client': major
----
-
-test version
