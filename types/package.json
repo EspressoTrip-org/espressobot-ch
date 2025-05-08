@@ -1,7 +1,7 @@
 {
   "name": "types",
   "repository": "https://github.com/EspressoTrip-org/espressobot-ch",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "main": "dist/index",
   "types": "dist/index",
   "license": "UNLICENCED",
