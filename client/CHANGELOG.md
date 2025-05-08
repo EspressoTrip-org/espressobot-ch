@@ -1,5 +1,11 @@
 # client
 
+## 8.0.1
+
+### Patch Changes
+
+- 58c0489: test
+
 ## 8.0.0
 
 ### Major Changes
