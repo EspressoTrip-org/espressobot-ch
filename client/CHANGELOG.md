@@ -1,5 +1,11 @@
 # client
 
+## 6.0.0
+
+### Major Changes
+
+- 83a64b8: test
+
 ## 5.0.0
 
 ### Major Changes
