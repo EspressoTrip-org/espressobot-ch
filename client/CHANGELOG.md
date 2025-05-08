@@ -1,5 +1,11 @@
 # client
 
+## 8.0.0
+
+### Major Changes
+
+- 5e24e06: test
+
 ## 7.0.0
 
 ### Major Changes
