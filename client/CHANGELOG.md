@@ -1,5 +1,11 @@
 # client
 
+## 4.0.0
+
+### Major Changes
+
+- cf723a0: client version bump
+
 ## 3.0.0
 
 ### Major Changes
