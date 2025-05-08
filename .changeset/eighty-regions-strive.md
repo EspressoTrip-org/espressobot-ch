@@ -1,5 +1,0 @@
----
-'service': minor
----
-
-test
