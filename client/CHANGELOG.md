@@ -1,5 +1,11 @@
 # client
 
+## 3.0.0
+
+### Major Changes
+
+- 1a82504: version bump
+
 ## 2.0.0
 
 ### Major Changes
