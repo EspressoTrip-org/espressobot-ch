@@ -1,5 +1,11 @@
 # types
 
+## 4.0.0
+
+### Major Changes
+
+- dc04f09: test
+
 ## 3.0.0
 
 ### Major Changes
